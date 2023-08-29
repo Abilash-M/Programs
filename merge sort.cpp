@@ -18,24 +18,18 @@ void merg(int a[],int lb,int mid,int ub)
         }
         k++;
     }
-    if(i>mid)
-    {
       while(j<=ub)
       {
         b[k]=a[j];
         j++;
         k++;
       }
-    }
-    if(j>ub)
-    {
         while(i<=mid)
         {
             b[k]=a[i];
             i++;
             k++;
         }
-    }
 for(int i=lb;i<=ub;i++)
 {
     a[i]=b[i];
@@ -68,12 +62,8 @@ int main()
     cout<<"Enter the number of elements in the array:";
     cin>>n;
     int a[n];
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
+    for(int i=0;i<n;i++)    cin>>a[i];
     int siz=sizeof(a)/sizeof(a[0]);
-    cout<<siz<<"--------------"<<endl;
     mergesort(a,0,siz-1);
     sorted(a,siz-1);
 }

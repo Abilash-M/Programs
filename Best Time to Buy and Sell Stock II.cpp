@@ -20,11 +20,9 @@ public:
         return profit;
     }
 };
-
-
 int main()
 {
-    Solution m;
+Solution m;
 vector<int> prices = {7,1,5,3,6,4};
 int c =m.maxProfit(prices);
 cout<<c;
