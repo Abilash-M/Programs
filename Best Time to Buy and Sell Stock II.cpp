@@ -12,7 +12,7 @@ public:
                 if(prices[l]>prices[r]);
                 else
                 {
-                    profit=profit + (prices[r]-prices[l]);
+                    profit=profit + (prices[r] - prices[l]);
                 }
                 l=r;
                 r++;
