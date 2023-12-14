@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 #include<iostream>
 #include<vector>
 #include<bits/stdc++.h>
@@ -5,22 +7,15 @@ using namespace std;
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int maxprofit=0;
-        int l=INT_MAX;
-        int r=0,profit;
-        while(r<prices.size())
-            {
-                if(l>prices[r])
-                {
-                    l=prices[r];
-                }
-                else if(prices[r]-l > maxprofit)
-                {
-                    maxprofit=prices[r]-l;
-                }
-                r++;
-            }
-        return maxprofit;
+        int mini=INT_MAX;
+        int profit=0;
+        for(int i=0;i<prices.size();i++)
+        {
+            if()
+            mini=min(mini,prices[i]);
+            profit=max(profit,prices[i]-mini);
+        }
+        return profit;
     }
 };
 
