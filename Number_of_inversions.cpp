@@ -1,5 +1,3 @@
-//Problem link: https://www.codingninjas.com/studio/problems/number-of-inversions_6840276?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
-
 #include<iostream>
 #include<vector>
 using namespace std;
